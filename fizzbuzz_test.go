@@ -43,3 +43,10 @@ func TestInput15ShouldBeDisplayFizzBuzz(t *testing.T) {
 		t.Error("fizzbuzz of 15 should be 'fizzbuzz' but have", v)
 	}
 }
+
+func TestInput20ShouldBeDisplayBuzz(t *testing.T) {
+	v := Fizzbuzz(20)
+	if "buzz" != v {
+		t.Error("fizzbuzz of 20 should be 'buzz' but have", v)
+	}
+}
